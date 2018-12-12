@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="methods.cpp">
+      <Filter>ExternalSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\App\Out.cpp">
+      <Filter>ExternalSrc</Filter>
+    </ClCompile>
+    <ClCompile Include="test2.cpp">
+      <Filter>ext</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ExternalSrc">
+      <UniqueIdentifier>{d3c1e2ac-dc2d-4224-8245-36e8ef885554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext">
+      <UniqueIdentifier>{60aa39b5-d979-4f6a-a0e9-826a35f6c64d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
